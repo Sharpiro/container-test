@@ -12,7 +12,7 @@ COPY . /app
 # EXPOSE 80
 
 # Define environment variable
-ENV TEST_ENV "here is my variable"
+ENV PORT 80
 
 # Run app.py when the container launches
 # CMD ["python", "main.py"]

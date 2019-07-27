@@ -1,11 +1,12 @@
 import os
-var = os.getenv("TEST_ENV")
-print(var)
+port = os.getenv("PORT")
+port = int(port) if port != None else 8000
+print(port)
 
 import http.server
 import socketserver
 
-PORT = 8000
+PORT = port
 
 Handler = http.server.SimpleHTTPRequestHandler
 
