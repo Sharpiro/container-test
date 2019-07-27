@@ -9,7 +9,9 @@
 <body>
     <button id="testButton">Test</button>
     <script>
-        var ws = new WebSocket("ws://127.0.0.1:8000"),
+        var ws = new WebSocket("ws://containertest-env.2ziityfm6q.us-east-1.elasticbeanstalk.com"),
+        // var ws = new WebSocket("ws://127.0.0.1:8000"),
+        // var ws = new WebSocket("ws://container-test-app.azurewebsites.net"),
             messages = document.createElement('ul');
         ws.onmessage = function (event) {
             console.log(event)
