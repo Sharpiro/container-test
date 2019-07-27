@@ -14,6 +14,8 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Define environment variable
 ENV PORT 80
 
+EXPOSE 80
+
 # Run app.py when the container launches
 # CMD ["python", "main.py"]
 # CMD ["python", "-m", "http.server", "5678"]
